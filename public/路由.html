@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#/">turn white</a></li>
+        <li><a href="#/aa">turn blue</a></li>
+        <li><a href="#/green">turn green</a></li>
+    </ul>
+
+    <div id="t11">
+        23131
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.0.js">
+    </script>
+    <script type="text/javascript">
+        function Router() {
+            this.routes = {};
+            this.currentUrl = '';
+        }
+        Router.prototype.route = function(path, callback) {
+            this.routes[path] = callback || function() {};
+        };
+        Router.prototype.refresh = function() {
+            this.currentUrl = location.hash.slice(1) || '/';
+            this.routes[this.currentUrl]();
+        };
+        Router.prototype.init = function() {
+                window.addEventListener('load', this.refresh.bind(this), false);
+                //监听hashchange，hash的改变
+                window.addEventListener('hashchange', this.refresh.bind(this), false);
+            }
+            //定义完了，初始化
+        window.Router = new Router();
+        window.Router.init();
+
+        var content = document.querySelector('body');
+        var t11 = document.querySelector('#t11');
+        // change Page anything
+        // 此处可以添加函数，修改对应的页面
+        function changeBgColor(color) {
+            content.style.backgroundColor = color;
+        }
+
+        function changeDisplay(display) {
+            t11.style.display = display;
+        }
+
+        Router.route('/', function() {
+            changeBgColor('white');
+            changeDisplay('none');
+        });
+        Router.route('/blue', function() {
+            changeBgColor('blue');
+            changeDisplay('block');
+        });
+        Router.route('/green', function() {
+            changeBgColor('green');
+            changeDisplay('block');
+        });
+    </script>
+</body>
+
+</html>

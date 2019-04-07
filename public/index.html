@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TTMS</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="header_1">
+            <div class="left">
+                <ul>
+                    <li><a href="javascript:;">首页</a></li>
+                    <li><a href="mover.html">影片介绍</a></li>
+                    <li><a href="http://app.tanwan.com/htmlcode/17443.html">更多</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="right_1">
+                    <a href="javascript:showLog();" id="DL">登录</a>
+                    <a href="Register.html" id="ZC">注册</a>
+                </div>
+
+                <div class="right_2">
+                    <a href="customer.html"><i class="user"><img src="" alt=""></i></a>
+                    <span class="userId">姓名</span>
+                    <span></span>
+
+                    <div class="off-line">
+                        注销
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***********************   登陆注册   ******************************************************* -->
+
+    <!-- 遮罩层 -->
+    <div id="Shade"></div>
+
+    <!-- 登陆 -->
+    <div id="Log" click="closeLog">
+        <div class="Modal-Header">
+            <h3>Modal Header</h3>
+            <button type="button" class="close clsbtn">×</button>
+        </div>
+        <form action="">
+
+            <div class="Modal-body">
+                <div class="body-head">
+                    <div class="username">&nbsp;</div>
+                    <div class="text"><input type="text" id="username" name="username" placeholder="用户名"></div>
+                </div>
+                <div class="body-middle">
+                    <div class="password">&nbsp;</div>
+                    <div class="text"><input type="password" id="password" name="password" placeholder="密码"></div>
+                </div>
+                <div class="body-bottom">
+                    <div class="verify">&nbsp;</div>
+                    <div class="text"><input type="text"></div>
+                    <div class="varify-image"></div>
+                </div>
+            </div>
+
+
+            <div class="Modal-footer">
+                <div class="Modal-bottom">
+                    <input type="button" value="Cancel" class="btn Log-cancel">
+
+                    <!-- <input type="button" value="Submit" class=" btn Log-submit"> -->
+                </div>
+            </div>
+
+        </form>
+        <button value="Submit" class=" btn Log-submit" id="submit">
+            Submit
+        </button>
+    </div>
+
+    <!-- 注册 -->
+    <div id="Register">
+
+    </div>
+
+    <!-- ************************    轮播图    ***************************************************************  -->
+    <div class="carousel" id="carousel">
+        <div class="imglist">
+            <ul class="UL">
+                <li class="list1">
+                    <a href="javascript:;"><img src="img/01.jpg" alt=""></a>
+                </li>
+                <li class="list2">
+                    <a href="javascript:;"><img src="img/02.jpg" alt=""></a>
+                </li>
+                <li class="list3">
+                    <a href="javascript:;"><img src="img/03.jpg" alt=""></a>
+                </li>
+                <li class="list4">
+                    <a href="javascript:;"><img src="img/04.jpg" alt=""></a>
+                </li>
+                <li class="list5">
+                    <a href="javascript:;"><img src="img/05.jpg" alt=""></a>
+                </li>
+                <li class="list6">
+                    <a href="javascript:;"><img src="img/06.jpg" alt=""></a>
+                </li>
+
+                <!--                         用"#"也会刷新                                                                                                   -->
+                <!--              这个位置加一行href="javaccript:;"意为组织点击图片刷新页面                                  -->
+            </ul>
+        </div>
+        <div class="line">
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <!--此位置加一行href="javaccript:;"意为组织点击图片刷新页面-->
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="movie-grid">
+            <div class="left">
+                <div class="panel-header">
+                    <span class="panel-more">
+                    <a href="mover.html">全部&nbsp;&nbsp;&nbsp;</a>
+                </span>
+                    <span class="panel-title">&nbsp;&nbsp;&nbsp;&nbsp;正在热映（31部）</span>
+                </div>
+                <div class="panel-container">
+                    <dl class="movie-list">
+                        <dd>
+                            <div class="movie-item" name="">
+                                <!-- 此处的换行符会被解析成一行，所以我们将a，span标签的font-size设置为0即可避免movie-item和movie-detail中的空白 -->
+                                <a href="movie.html" target=""><img src="img/film/021.jpg" alt="" class="Img"></a>
+                                <div class="movie-info">
+                                    <div class="movie-title">ffsdfa</div>
+                                    <div class="movie-score"></div>
+                                </div>
+                                <div class="movie-detail">
+                                    <a href="movie.html" target="">购票</a>
+                                </div>
+                            </div>
+
+                        </dd>
+                        <dd>
+                            <div class="movie-item" name="null">
+                                <a href="movie.html" target=""><img src="img/film/022.jpg" alt="" class="Img"></a>
+                                <div class="movie-info">
+                                    <div class="movie-title"></div>
+                                    <div class="movie-score"></div>
+                                </div>
+                                <div class="movie-detail">
+                                    <a href="movie.html" target="">购票</a>
+                                </div>
+                            </div>
+
+                        </dd>
+                        <dd>
+                            <div class="movie-item" name="null">
+                                <a href="movie.html" target=""><img src="img/film/023.jpg" alt="" class="Img"></a>
+                                <div class="movie-info">
+                                    <div class="movie-title"></div>
+                                    <div class="movie-score"></div>
+                                </div>
+                                <div class="movie-detail">
+                                    <a href="movie.html" target="">购票</a>
+                                </div>
+                            </div>
+
+                        </dd>
+                        <dd>
+                            <div class="movie-item" name="null">
+                                <a href="movie.html" target=""><img src="img/film/024.jpg" alt="" class="Img"></a>
+                                <div class="movie-info">
+                                    <div class="movie-title"></div>
+                                    <div class="movie-score"></div>
+                                </div>
+                                <div class="movie-detail">
+                                    <a href="movie.html" target="">购票</a>
+                                </div>
+                            </div>
+
+                        </dd>
+                        <dd>
+                            <div class="movie-item" name="null">
+                                <a href="movie.html" target=""><img src="img/film/025.jpg" alt="" class="Img"></a>
+                                <div class="movie-info">
+                                    <div class="movie-title"></div>
+                                    <div class="movie-score"></div>
+                                </div>
+                                <div class="movie-detail">
+                                    <a href="movie.html" target="">购票</a>
+                                </div>
+                            </div>
+
+                        </dd>
+                        <dd>
+                            <div class="movie-item" name="null">
+                                <a href="movie.html" target=""><img src="img/film/026.jpg" alt="" class="Img"></a>
+                                <div class="movie-info">
+                                    <div class="movie-title"></div>
+                                    <div class="movie-score"></div>
+                                </div>
+                                <div class="movie-detail">
+                                    <a href="movie.html" target="">购票</a>
+                                </div>
+                            </div>
+
+                        </dd>
+                        <dd>
+                            <div class="movie-item" name="null">
+                                <a href="movie.html" target=""><img src="img/film/027.jpg" alt="" class="Img"></a>
+                                <div class="movie-info">
+                                    <div class="movie-title"></div>
+                                    <div class="movie-score"></div>
+                                </div>
+                                <div class="movie-detail">
+                                    <a href="movie.html" target="">购票</a>
+                                </div>
+                            </div>
+
+                        </dd>
+                        <dd>
+                            <div class="movie-item" name="null">
+                                <a href="movie.html" target=""><img src="img/film/028.jpg" alt="" class="Img"></a>
+                                <div class="movie-info">
+                                    <div class="movie-title"></div>
+                                    <div class="movie-score"></div>
+                                </div>
+                                <div class="movie-detail">
+                                    <a href="movie.html" target="">购票</a>
+                                </div>
+                            </div>
+
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="rank-right">
+                <div class="ranking-list">
+                    <div class="rank-header">今日票房</div>
+                    <div class="rank-content">
+                        <ul>
+                            <li class="frist-span Rank" name="">
+                                <a id="frist-span" href="javascript:;">
+                                    <div>
+                                        <img src="img/film/fuchouzhe.jpg" alt="">
+                                        <div id="frist-block">
+                                            <span id="frist-span1">复仇者联盟3：无限战争</span><br>
+                                            <span id="frist-span2">3262.01万</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="span2 Rank" name="">
+                                <a href="javascript:;">
+                                    <span>
+                                        <span>2&nbsp;&nbsp;</span>
+                                    <span class="rank-title">我是你妈</span>
+                                    <span class="rank-num">2997.06万</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="span3 Rank" name="">
+                                <a href="javascript:;">
+                                    <span>
+                                        <span>3&nbsp;&nbsp;</span>
+                                    <span class="rank-title">后来的我们</span>
+                                    <span class="rank-num">2978.99万</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="span4 Rank" name="">
+                                <a href="javascript:;">
+                                    <span>
+                                        <span>4&nbsp;&nbsp;</span>
+                                    <span class="rank-title">幕后玩家</span>
+                                    <span class="rank-num">2978.98万</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="span5 Rank" name="">
+                                <a href="javascript:;">
+                                    <span>
+                                        <span>5&nbsp;&nbsp;</span>
+                                    <span class="rank-title">青年马克思
+                                    </span>
+                                    <span class="rank-num">2098.00万</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="span6 Rank" name="">
+                                <a href="javascript:;">
+                                    <span>
+                                        <span>6&nbsp;&nbsp;</span>
+                                    <span class="rank-title">狂暴巨兽</span>
+                                    <span class="rank-num">1479.01万</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="span7 Rank" name="">
+                                <a href="javascript:;">
+                                    <span>
+                                        <span>7&nbsp;&nbsp;</span>
+                                    <span class="rank-title">巴霍巴利王2：终结</span>
+                                    <span class="rank-num">1362.01万</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="span8 Rank" name="">
+                                <a href="javascript:;">
+                                    <span>
+                                        <span>8&nbsp;&nbsp;</span>
+                                    <span class="rank-title">战犬瑞克斯</span>
+                                    <span class="rank-num">1232.01万</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="span9 Rank" name="">
+                                <a href="javascript:;">
+                                    <span>
+                                        <span>9&nbsp;&nbsp;</span>
+                                    <span class="rank-title">头号玩家</span>
+                                    <span class="rank-num">1366.10万</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="span10 Rank" name="">
+                                <a href="javascript:;">
+                                    <span>
+                                        <span>10</span>
+                                    <span class="rank-title">出山记</span>
+                                    <span class="rank-num">997.33万</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rank-bottom">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="bottom">
+        <p class="">
+            违法和不良信息举报电话：12023909200 举报邮箱：biejubao@stupid.com
+        </p>
+        <p class="">
+            友情链接：
+            <a href="http://www.google.com" style="color: #ef4238;">自己搜</a>
+            <a href="http://i.meituan.com/client" style="color: #ef4238;">贪玩下载</a>
+        </p>
+        <p>©贪玩电影 taowang.com
+            <a href="">京ICP证160733号</a>
+            <a href="">京ICP备16022489号-2</a> 京公网安备 11010101010111号
+            <a href="">网络文化经营许可证</a>
+            <a href="">电子公告服务规则</a>
+        </p>
+        <p>北京贪玩文化传媒有限公司</p>
+    </div>
+
+
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/index.js"></script>
+
+
+</body>
+
+</html>

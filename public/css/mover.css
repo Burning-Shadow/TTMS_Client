@@ -1,0 +1,80 @@
+#nouse {
+    width: 100%;
+    height: 80px;
+}
+
+
+/*********************************************************************************/
+
+#container {
+    width: 1146px;
+    height: 1576px;
+    margin: 20px auto;
+    overflow: hidden;
+    /* background-color: red; */
+}
+
+.movie-list {
+    margin: -29px 0 20px -25px;
+}
+
+.movie-list dd {
+    margin: 30px 0 0 30px;
+    display: inline-block;
+    /* 以其父元素的顶端对齐 */
+    vertical-align: top;
+    position: relative;
+}
+
+.movie-item {
+    height: 261px;
+    width: 160px;
+    margin: auto auto;
+    /* font-size: 0; */
+    /* border: 1px solid #efefef; */
+    /* background-color: beige; */
+}
+
+.movie-item img {
+    height: 222px;
+    width: 160px;
+}
+
+.movie-item>a {
+    height: 222px;
+    width: 160px;
+    display: block;
+}
+
+.movie-detail {
+    line-height: 39px;
+}
+
+.movie-detail>a {
+    font-size: 14px;
+    display: block;
+    width: 162px;
+    height: 39px;
+    color: black;
+    text-align: center;
+}
+
+
+/*底部*/
+
+#bottom {
+    width: 100%;
+    height: 175px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #666;
+    background-color: #262426;
+    padding: 56px 0;
+    margin: 50 auto 0 auto;
+    min-width: 1200px;
+    text-align: center;
+}
+
+#bottom a {
+    color: #666;
+}

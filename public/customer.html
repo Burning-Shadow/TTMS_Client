@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customer</title>
+    <link rel="stylesheet" href="css/customer.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+
+    <div id="top">
+        <div class="top-content">
+            尊敬的&nbsp;
+            <span class="username">localStorage.getItem('name')</span> &nbsp;您好
+        </div>
+    </div>
+
+
+    <div class="no-tkt-content">
+        <div class="no-tkt-detail">
+            抱歉，您至目前为止还没有未使用的电影票
+        </div>
+    </div>
+
+    <div class="tkt-content">
+        <div class="tkt-title">
+            您近期的票务数据如下：
+        </div>
+        <div class="tkt-detail">
+            <ul class="movie-schedule">
+
+                <!-- 
+                    <li class="schedule">
+                    <div class="inner-content">
+                        <div class="filmName">'+data.session[i].filmName+'</div>
+                        <div class="detail">
+                            <span class="hallId">'+data.session[i].moviehallid+'</span>号厅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="startTime">'+data.session[i].starttime+'</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="timeLength">'+ data.session[i].timelength +'</span>min
+                        </div>
+                    </div>
+                </li>
+             -->
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="bottom">
+        <p class="">
+            违法和不良信息举报电话：12023909200 举报邮箱：biejubao@stupid.com
+        </p>
+        <p class="">
+            友情链接：
+            <a href="http://www.google.com" style="color: #ef4238;">自己搜</a>
+            <a href="http://i.meituan.com/client" style="color: #ef4238;">贪玩下载</a>
+        </p>
+        <p>©贪玩电影 taowang.com
+            <a href="">京ICP证160733号</a>
+            <a href="">京ICP备16022489号-2</a> 京公网安备 11010101010111号
+            <a href="">网络文化经营许可证</a>
+            <a href="">电子公告服务规则</a>
+        </p>
+        <p>北京贪玩文化传媒有限公司</p>
+    </div>
+
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/customer.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/movie.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="header_1">
+            <div class="left">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="mover.html">影片介绍</a></li>
+                    <li><a href="http://app.tanwan.com/htmlcode/17443.html">更多</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="right_1">
+                    <a href="javascript:showLog();" id="DL">登录</a>
+                    <a href="Register.html" id="ZC">注册</a>
+                </div>
+
+                <div class="right_2">
+                    <a href="customer.html"><i class="user"><img src="" alt=""></i></a>
+                    <span class="userId">姓名</span>
+                    <span></span>
+
+                    <div class="off-line">
+                        注销
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="title-nouse"></div>
+
+    <!-- ***********************   登陆注册   ******************************************************* -->
+
+    <!-- 遮罩层 -->
+    <div id="Shade"></div>
+
+    <!-- 登陆 -->
+    <div id="Log" click="closeLog">
+        <div class="Modal-Header">
+            <h3>Modal Header</h3>
+            <button type="button" class="close clsbtn">×</button>
+        </div>
+        <form action="">
+
+            <div class="Modal-body">
+                <div class="body-head">
+                    <div class="username">&nbsp;</div>
+                    <div class="text"><input type="text" id="username" name="username" placeholder="用户名"></div>
+                </div>
+                <div class="body-middle">
+                    <div class="password">&nbsp;</div>
+                    <div class="text"><input type="password" id="password" name="password" placeholder="密码"></div>
+                </div>
+                <div class="body-bottom">
+                    <div class="verify">&nbsp;</div>
+                    <div class="text"><input type="text"></div>
+                    <div class="varify-image"></div>
+                </div>
+            </div>
+
+
+            <div class="Modal-footer">
+                <div class="Modal-bottom">
+                    <input type="button" value="Cancel" class="btn Log-cancel">
+                    <button value="Submit" class=" btn Log-submit" id="submit">Submit
+                        </button>
+                    <!-- <input type="button" value="Submit" class=" btn Log-submit"> -->
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- 注册 -->
+    <div id="Register">
+
+    </div>
+
+    <div id="outer">
+        <div id="detail">
+            <div class="img-container">
+                <div class="inner-container">
+                    <img src="img/zhangxueyou.jpg" alt="">
+                </div>
+            </div>
+            <div class="movie-brief-container">
+                <h3 class="filmName">侏罗纪世界：2</h3>
+                <div class="director">Jurassic Fallen.Kingdom</div>
+                <ul>
+                    <li class="type">动作,冒险,科幻</li>
+                    <li class="OrignTime"><span class="country">美国</span> / <span class="filmTime">128min</span></li>
+                    <li class="releasedate">2018-06-15大陆上映</li>
+                </ul>
+            </div>
+
+            <div class="action-btn">
+                <div class="top">
+                    <a href="img/zhangxueyou.jpg" id="nouse">
+                        <div>别点</div>
+                    </a>
+
+                    <a href="img/zhangxueyou.jpg" id="nouse">
+                        <div>也别点</div>
+                    </a>
+                </div>
+                <a href="#anchor" id="buyTicket">特惠购票</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="nouse2"></div>
+
+    <div id="content">
+        <div class="module">
+            <h3>
+                <div class="col-block"></div>
+                <!-- 色块 -->
+                剧情简介
+            </h3>
+            <br>
+            <br>
+            <div class="mod-content">
+                <span class="synopsis">
+                    侏罗纪世界主题公园及豪华度假村被失控的恐龙们摧毁已有四年。如今，纳布拉尔岛已经被人类遗弃，岛上幸存的恐龙们在丛林中自给自足。当岛上的休眠火山开始活跃以后，欧文（克里斯·帕拉特 饰）与克莱尔（布莱丝·达拉斯·霍华德 饰）发起了一场运动，想要保护岛上幸存的恐龙们免于灭绝。欧文一心想要找到自己依然失踪在野外的迅猛龙首领布鲁，克莱尔如今也尊重起这些生物，以保护它们为己任。两人在熔岩开始喷发时来到了危险的小岛，他们的冒险也揭开了一个可能让地球回到史前时代般混乱秩序的阴谋。
+                </span>
+            </div>
+        </div>
+
+        <div class="ad">
+            <div class="ad-nouse"></div>
+
+            <ul>
+                <div class="ad-title">相关资讯</div>
+                <li>
+                    <img src="img/ad/sunhonglei.jpg" alt="">
+                    <div class="ad-content">屠龙一出谁与争锋，在家挂机月入三万，《贪玩蓝月》Steam榜有望登顶！！！</div>
+                </li>
+                <li>
+                    <img src="img/ad/zhazhahui.jpg" alt="">
+                    <div class="ad-content">震惊！《吞噬异兽》与《贪玩蓝月》竞争流量，腾讯或成最大赢家！！！</div>
+                </li>
+                <li>
+                    <img src="img/ad/gutianle.jpg" alt="">
+                    <div class="ad-content">《贪玩蓝月》船新版本测试服正式发布，是兄弟就来砍我！！！</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="anchor"></div>
+
+    <div class="movie-detail">
+        <div class="movie-schedule-title">
+            <div class="col-block"></div>&nbsp;演出计划（Movie Schedule）</div>
+        <ul class="movie-schedule">
+
+            <!-- 用jq往这里边写东西 -->
+            <!-- <li class="schedule" name="data.session[i].moviehallid">
+                <div class="session">
+                    <div class="session-info">
+                        <div class="session-top"><span class="hall-id">' + data.session[i].moviehallid + '</span>号厅（免费提供3D眼镜）</div>
+                        <div class="session-bottom">放映时间-<span class="starttime">' + data.session[i].starttime + '</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="timelength">' + data.session[i].timelength + '</span>min</div>
+                    </div>
+                    <div class="buy-btn"><a href="ticker.html" name="data.session[i].starttime">选座购票</a></div>
+                </div>
+            </li> -->
+
+        </ul>
+    </div>
+
+
+    <div id="bottom">
+        <p class="">
+            违法和不良信息举报电话：12023909200 举报邮箱：biejubao@stupid.com
+        </p>
+        <p class="">
+            友情链接：
+            <a href="http://www.google.com" style="color: #ef4238;">自己搜</a>
+            <a href="http://i.meituan.com/client" style="color: #ef4238;">贪玩下载</a>
+        </p>
+        <p>©贪玩电影 taowang.com
+            <a href="">京ICP证160733号</a>
+            <a href="">京ICP备16022489号-2</a> 京公网安备 11010101010111号
+            <a href="">网络文化经营许可证</a>
+            <a href="">电子公告服务规则</a>
+        </p>
+        <p>北京贪玩文化传媒有限公司</p>
+    </div>
+
+
+
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/movie.js"></script>
+</body>
+
+</html>

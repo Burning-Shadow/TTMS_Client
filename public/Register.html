@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/Register.css">
+</head>
+
+<body>
+
+
+    <div id="reg-content">
+
+        <form action="" method="POST">
+
+            <div class="form-filed">
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机号</label>
+                <input type="text" name="mobile" class="mobile">
+                <span class="inline-tip1" style="color: red">此手机号已被注册，请直接登陆</span>
+                <span class="inline-tip reg-none"><i></i>手机号码不能为空</span>
+                <span class="inline-tip reg-rule"><i></i>手机号格式不正确，请重新输入</span>
+            </div>
+
+            <div class="form-filed">
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户名</label>
+                <input type="text" name="user" class="user">
+                <span class="inline-tip user-none"><i></i>用户名不能为空</span>
+            </div>
+
+            <div class="safe">
+                <input type="button" value="免费获取短信验证码" class="message">
+            </div>
+
+            <div class="form-filed">
+                <label>短信验证码</label>
+                <input type="text" name="capcha" class="capcha">
+                <span class="inline-tip reg-message"><i></i>短信验证码不能为空</span>
+                <span class="inline-tip reg-error"><i></i>短信验证码不正确</span>
+                <span class="inline-tip reg-none"><i></i>验证码与后台数据不符</span>
+            </div>
+
+            <div class="form-filed">
+                <label>&nbsp;&nbsp;&nbsp;创建密码</label>
+                <input type="password" name="password" class="user-pass1" min="6" max="16">
+                <span class="inline-tip reg-pass-err"><i></i>密码只能为8-16位的字母，数字，下划线</span>
+                <span class="inline-tip reg-pass-none"><i></i>密码不能为空</span>
+            </div>
+
+            <div class="safe">
+                <span class="safe-check primary">弱</span>
+                <span class="safe-check middle">中</span>
+                <span class="safe-check senior">高</span>
+            </div>
+            <br>
+            <div class="form-filed">
+                <label>&nbsp;&nbsp;&nbsp;确认密码</label>
+                <input type="password" name="password" class="user-pass2" min="6" max="16">
+                <span class="inline-tip reg-password2"><i></i>请再次输入密码</span>
+                <span class="inline-tip reg-password2-err"><i></i>两次密码不同</span>
+            </div>
+
+            <div class="reg-sub">
+                <div type="button" class="sub-btn" href="index.html">同意以下协议并注册</div>
+            </div>
+
+            <div class="reg-img">
+                <a href="img/zhangxueyou.jpg">《贪玩影城用户协议》</a>
+            </div>
+
+        </form>
+
+    </div>
+
+    <div id="footer">
+        <p>©tanwan.com 京ICP证678546号 京公网安备11098742025035号</p>
+    </div>
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/Register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+#reg-content {
+    width: 650px;
+    height: 380px;
+    margin: 100px auto 50px auto;
+    border-bottom: 1px #e5e5e5;
+}
+
+.form-filed {
+    height: 52px;
+    line-height: 52px;
+}
+
+.inline-tip {
+    display: none;
+}
+
+.inline-tip i {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-image: url(../img/reminder.png);
+    vertical-align: -0.2em;
+}
+
+.inline-tip1 {
+    display: none;
+}
+
+.message {
+    width: 136.81px;
+    height: 21px;
+    font-size: 12px;
+    color: #333;
+    background-color: #dedede;
+    border: 1px solid #e3e3e3;
+    border-bottom: 1px solid #aaa;
+    border-radius: 2px;
+    background-image: linear-gradient(to bottom, #f7f7f7, #dedede);
+}
+
+.safe {
+    margin-left: 85px;
+}
+
+.safe-check {
+    display: block;
+    float: left;
+    width: 87px;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    width: 85px;
+    border-right: 2px solid #fff;
+    color: #fff;
+    background-color: #e5e5e5;
+}
+
+.reg-sub {
+    height: 52px;
+    line-height: 52px;
+    margin-left: 85px;
+}
+
+.reg-img {
+    height: 52px;
+    line-height: 52px;
+    margin-left: 85px;
+    color: red;
+    font-size: 14px;
+}
+
+.reg-img a {
+    color: red;
+}
+
+.reg-img a:hover {
+    text-decoration: underline;
+}
+
+.sub-btn {
+    cursor: pointer;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 2px;
+    width: 180px;
+    height: 35px;
+    border: #e02025;
+    color: #FFF;
+    background: #ec454a;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ec454a), color-stop(100%, #e02025));
+    background: -webkit-linear-gradient(top, #ec454a 0, #e02025 100%);
+    background: linear-gradient(to bottom, #ec454a 0, #e02025 100%);
+}
+
+#footer {
+    text-align: center;
+    font-size: 12px;
+    font-family: initial;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    color: #999;
+}

@@ -1,0 +1,336 @@
+/*轮播图*/
+
+.carousel li {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carousel {
+    width: 1200px;
+    height: 360px;
+    margin: 90px auto;
+    /* background-color: gray; */
+}
+
+.carousel .imglist {
+    width: 1200px;
+    height: 336px;
+}
+
+.carousel .line {
+    text-align: center;
+    width: 1200px;
+    height: 24px;
+}
+
+.carousel .imglist .UL {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel .list1 {
+    left: 0;
+    z-index: 1;
+    transform: scale(0.81);
+    /*图片大小为原来的0.81*/
+    transform-origin: 0 70%;
+    /*左下角对齐*/
+}
+
+.carousel .list2 {
+    left: 235px;
+    z-index: 2;
+}
+
+.carousel .list3 {
+    left: 730px;
+    transform: scale(0.81);
+    transform-origin: 0 70%;
+    /*左下角对齐。如果设置成  “0 50%” 就居中对齐了*/
+    z-index: 1;
+}
+
+.carousel .list4 {
+    left: 965px;
+    transform: scale(0.81);
+    transform-origin: 0 70%;
+    /*左下角对齐*/
+}
+
+.carousel .list5 {
+    left: 1200px;
+    transform: scale(0.81);
+    transform-origin: 0 70%;
+    /*左下角对齐*/
+}
+
+.carousel .list6 {
+    z-index: 0;
+    left: 360px;
+    transform: scale(0.81);
+    transform-origin: 0 70%;
+    /*左下角对齐*/
+}
+
+[class^=list] {
+    /*    [attribute^=value] :设置class属性值以 "test" 开头的元素的属性值     */
+    /* transition设置动画过度属性  ease-in-out缓慢开始，缓慢结束 */
+    /* transform设置立体效果 */
+    transition: left ease-in-out .5s, transform ease-in-out .5s;
+}
+
+.carousel .line>a {
+    /* >为子元素选择器 */
+    display: inline-block;
+    /*设置为行内元素*/
+    width: 35px;
+    height: 3px;
+    background-color: #cccccc;
+}
+
+#main {
+    background-color: #fff;
+    margin: 0 auto 100px auto;
+    width: 1200px;
+    height: 700px;
+}
+
+.movie-grid {
+    position: relative;
+    min-width: 1210px;
+    width: 100%;
+    height: 632px;
+    margin: 0 auto;
+}
+
+.left {
+    width: 775px;
+    height: 632px;
+    position: relative;
+    float: left;
+    margin-right: 65px;
+}
+
+.panel-header {
+    line-height: 30px;
+    padding: 10px 0;
+    width: 775px;
+    height: 34px;
+}
+
+.panel-title {
+    font-size: 26px;
+    color: #ffb400;
+}
+
+.panel-more {
+    float: right;
+}
+
+.panel-more>a {
+    font-size: 14px;
+    color: red;
+}
+
+.movie-item {
+    height: 261px;
+    width: 160px;
+    font-size: 0;
+    border: 1px solid #efefef;
+    /* background-color: beige; */
+}
+
+.movie-info {
+    color: #fff;
+    position: absolute;
+    bottom: 7px;
+    width: 160px;
+    height: 47px;
+    margin-bottom: 33px;
+    line-height: 80px;
+    cursor: pointer;
+    background: -webkit-linear-gradient(top, rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.8));
+    /* Safari 5.1 - 6 */
+    background: -o-linear-gradient(top, rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.8));
+    /* Opera 11.1 - 12*/
+    background: -moz-linear-gradient(top, rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.8));
+    /* Firefox 3.6 - 15*/
+    background: linear-gradient(top, rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.8));
+    /* 标准的语法 */
+    /* background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABQCAMAAACpg44GAAAAbFBMV…AXzg9+4vzgFJcPnB98x/nBCS5vOD9YVVVVVVVVVVVVr/IEUdzLcLhtP2AAAAAASUVORK5CYII=) repeat-x bottom; */
+}
+
+.movie-score {
+    color: #fff;
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+}
+
+.movie-title {
+    font-size: 16px;
+    line-height: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin: 0 10px;
+    margin-right: 35px;
+    text-align: center
+}
+
+
+/* ***************************************************** */
+
+.panel-container {
+    width: 775px;
+    height: 578px;
+    position: relative;
+}
+
+.movie-list {
+    width: 775px;
+    height: 578px;
+    /* background-color: beige; */
+}
+
+.movie-list dd {
+    margin: 27px 0 0 27px;
+    display: inline-block;
+    /* 以其父元素的顶端对齐 */
+    vertical-align: top;
+    position: relative;
+}
+
+.movie-item img {
+    height: 222px;
+    width: 160px;
+}
+
+.movie-detail {
+    height: 39x;
+    line-height: 39px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie-detail:hover {
+    background-color: #ef4238;
+}
+
+.movie-detail>a {
+    font-size: 14px;
+    display: block;
+    width: 162px;
+    height: 39px;
+    color: #ef4238;
+}
+
+.movie-detail>a:hover {
+    color: white;
+}
+
+
+/* 主体右侧排行榜 ************************************************************************8*/
+
+.rank-right {
+    position: relative;
+    float: right;
+    width: 360px;
+    height: 632px;
+    /* background-color: green; */
+    right: 10px;
+}
+
+.rank-header {
+    font-size: 26px;
+    color: #ef4238;
+    width: 100%;
+    height: 52px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.ranking-list {
+    width: 360px;
+    height: 473px;
+    /* background-color: papayawhip; */
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+
+.rank-bottom {
+    width: 360px;
+    height: 105px;
+    /* background-color: #FF00AE; */
+    position: relative;
+    float: left;
+    margin-top: 54px;
+}
+
+[class^=span] {
+    width: 360px;
+    height: 35px;
+    margin: 3px 0;
+    line-height: 35px;
+}
+
+[class^=span]:hover {
+    background-color: #f7f7f7;
+}
+
+.frist-span {
+    width: 360px;
+    height: 80px;
+    margin: 3px 0;
+    border: 1px solid #efefef;
+}
+
+.frist-span:hover {
+    background-color: #f7f7f7;
+}
+
+#frist-block {
+    width: 240px;
+    height: 80px;
+    /* background-color: red; */
+    position: relative;
+    float: right;
+}
+
+#frist-span>div>img {
+    position: relative;
+    float: left;
+}
+
+#frist-span {
+    width: 360px;
+    height: 80px;
+}
+
+#frist-span1 {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+#frist-span2 {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: red;
+}
+
+.rank-num {
+    float: right;
+}
